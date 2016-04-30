@@ -16,3 +16,10 @@ This should work for that case
 ```sh
 taskkill /im fake.exe /f
 ```
+
+#### Configuring IIS
+* Install the [HttpPlatformHandler plugin](http://www.iis.net/downloads/microsoft/httpplatformhandler)
+* Need to set "Handler Mappings" to read/write (described [here](http://stackoverflow.com/a/12343141))
+
+* Clone the repo on to the server
+* Add the site to IIS (just follow the wizard)
