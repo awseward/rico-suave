@@ -3,5 +3,8 @@ NUGET
   specs:
     FAKE (4.25.5)
     FSharp.Core (4.0.0.1)
+    LibGit2Sharp (0.22)
+      LibGit2Sharp.NativeBinaries (1.0.129)
+    LibGit2Sharp.NativeBinaries (1.0.129)
     Suave (1.1.2)
       FSharp.Core (>= 3.1.2.5)
