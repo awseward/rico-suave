@@ -25,7 +25,9 @@ let app =
           path "/hello" >=> OK "GET /hello"
           path "/goodbye" >=> OK "GET /goodbye" ]
       POST >=> choose
-        [ path "/hello" >=> OK "POST /hello"
+        [
+          path "/" >=> OK "POST /"
+          path "/hello" >=> OK "POST /hello"
           path "/goodbye" >=> OK "POST /goodbye" ] ]
 
 startWebServer config app
