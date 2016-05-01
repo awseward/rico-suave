@@ -2,6 +2,10 @@
 
 set fake_args=%*
 
-call "paket.bat" "install"
+if not exist paket.lock (
+  call "paket.bat" "install"
+) else (
+  call "paket.bat" "restore"
+)
 
 ".\packages\FAKE\tools\FAKE.exe" "build.fsx" %fake_args%
